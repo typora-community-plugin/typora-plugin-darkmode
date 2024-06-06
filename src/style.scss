@@ -1,3 +1,76 @@
-.typ-example-cls {
-  color: red;
+body.typ-darkmode {
+
+  #typora-sidebar,
+  #top-titlebar,
+  #write,
+  footer.ty-footer,
+  #md-searchpanel,
+  #md-notification,
+  #typora-quick-open,
+  .context-menu,
+  #ty-auto-suggest,
+  #table-insert-dialog,
+  #typora-source,
+  #megamenu-content,
+  #uni-preference-panel,
+  .typ-ribbon,
+  .typ-tabs-wrapper,
+  .typ-modal__wrapper,
+  .typ-notice__container {
+    filter: invert(.9) hue-rotate(.5turn);
+  }
+
+  #top-titlebar {
+    height: 28px;
+  }
+
+  content {
+    &::-webkit-scrollbar {
+      background-color: #191919;
+    }
+
+    &::-webkit-scrollbar:hover {
+      background-color: #191919;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #252525;
+    }
+
+    &::-webkit-scrollbar-thumb:active {
+      background-color: #363636;
+    }
+
+    #typora-source {
+      height: 100%;
+    }
+  }
+
+  &.on-search-panel-open content {
+    top: 38px;
+
+    &.typora-sourceview-on #typora-source {
+      top: 28px;
+    }
+  }
+
+  .md-notification-container {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &.ty-show-notification.unibody-window {
+    content {
+      top: 40px;
+    }
+
+    &.typora-sourceview-on #typora-source {
+      top: 28px;
+    }
+  }
+
+  .typ-ribbon {
+    background: var(--bg-color);
+  }
 }

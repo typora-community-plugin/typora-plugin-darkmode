@@ -1,12 +1,12 @@
 {
-  "id": "typora-community-plugin.example",
-  "name": "Example",
-  "description": "Example plugin for typora.",
+  "id": "typora-community-plugin.darkmode",
+  "name": "Dark Mode",
+  "description": "General dark mode for any theme.",
   "author": "plylrnsdy",
   "authorUrl": "https://github.com/plylrnsdy",
-  "repo": "typora-community-plugin/typora-plugin-example",
-  "version": "1.0.1",
+  "repo": "typora-community-plugin/typora-plugin-darkmode",
+  "version": "1.0.0",
   "minAppVersion": "1.5.0",
-  "minCoreVersion": "2.0.0-beta.36",
+  "minCoreVersion": "2.0.0",
   "platforms": ["win32", "linux", "darwin"]
 }
