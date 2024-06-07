@@ -35,10 +35,10 @@ export default class extends Plugin {
   }
 
   enable() {
-    $('body').addClass('typ-darkmode')
+    $('html').addClass('typ-darkmode')
   }
 
   disable() {
-    $('body').removeClass('typ-darkmode')
+    $('html').removeClass('typ-darkmode')
   }
 }
