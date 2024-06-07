@@ -7,12 +7,14 @@ export default class extends Plugin {
   i18n = new I18n({
     resources: {
       'en': {
-        'enable': 'Enable',
-        'disable': 'Disable',
+        toggleButton: 'Toggle Dark Mode',
+        enable: 'Enable',
+        disable: 'Disable',
       },
       'zh-cn': {
-        'enable': '启用暗黑模式',
-        'disable': '禁用暗黑模式',
+        toggleButton: '切换暗黑模式',
+        enable: '启用暗黑模式',
+        disable: '禁用暗黑模式',
       },
     }
   })
@@ -32,6 +34,25 @@ export default class extends Plugin {
       scope: 'global',
       callback: () => this.disable(),
     })
+
+    const statusItem = this.addStatusBarItem({
+      position: 'right',
+      hint: t.toggleButton,
+    })
+    $(statusItem)
+      .append(
+        '<i class="fa fa-moon-o"></i>',
+        '<i class="fa fa-sun-o"></i>',
+      )
+      .on('click', () => {
+        this.isDarkMode()
+          ? this.disable()
+          : this.enable()
+      })
+  }
+
+  isDarkMode() {
+    return $('html').hasClass('typ-darkmode')
   }
 
   enable() {

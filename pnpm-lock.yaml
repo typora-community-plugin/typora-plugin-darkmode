@@ -13,7 +13,7 @@ specifiers:
   '@types/jquery': 3.3.1
   '@types/node': 16.18.0
   '@types/typora': npm:@typora-community-plugin/typora-types@^1.0.6
-  '@typora-community-plugin/core': ^2.0.0
+  '@typora-community-plugin/core': ^2.0.8
   archiver: ^5.3.2
   esbuild: ^0.19.2
   esbuild-plugin-typora: npm:@typora-community-plugin/esbuild-plugin-typora@^1.0.11
@@ -38,7 +38,7 @@ devDependencies:
   '@types/jquery': 3.3.1
   '@types/node': 16.18.0
   '@types/typora': /@typora-community-plugin/typora-types/1.0.6
-  '@typora-community-plugin/core': 2.0.0
+  '@typora-community-plugin/core': 2.0.8
   archiver: 5.3.2
   esbuild: 0.19.2
   esbuild-plugin-typora: /@typora-community-plugin/esbuild-plugin-typora/1.0.11
@@ -1709,8 +1709,8 @@ packages:
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
     dev: true
 
-  /@typora-community-plugin/core/2.0.0:
-    resolution: {integrity: sha512-AqRIBz3JCcU8zFUBw2uhM2sm8fjjSCm20WdZLv6UcCqFkAtRxJgSDvceerB7WGVWoqYc2URJoZ7U8Se9srSiNQ==}
+  /@typora-community-plugin/core/2.0.8:
+    resolution: {integrity: sha512-2NTMpwNGSlSmYUYCWSKGwZIf8QZICM2M+oB+HTe1SBBl2VZaNCL26lpnzGzFIcUaYtkTVccSWHQqKheXJmbKXg==}
     dependencies:
       '@plylrnsdy/decorate.js': 1.0.1
     dev: true

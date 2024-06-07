@@ -7,6 +7,7 @@ This a plugin based on [typora-community-plugin][core] for [Typora](https://typo
 General dark mode for any theme.
 
 - Use in Command Panel (Press <kbd>F1</kbd>)
+- Press the status bar button
 
 ## Preview
 

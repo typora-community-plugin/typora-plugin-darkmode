@@ -1,3 +1,19 @@
-html.typ-darkmode {
-  filter: invert(.9) hue-rotate(.5turn);
+html {
+  .footer-item .fa-sun-o {
+    display: none;
+  }
+  .footer-item .fa-moon-o {
+    display: inline;
+  }
+
+  &.typ-darkmode {
+    filter: invert(.9) hue-rotate(.5turn);
+
+    .footer-item .fa-sun-o {
+      display: inline;
+    }
+    .footer-item .fa-moon-o {
+      display: none;
+    }
+  }
 }

@@ -8,6 +8,7 @@
     "showSearchResultFullPath": false,
     "showRibbon": true,
     "showFileTabs": true,
+    "hideExtensionInFileTab": false,
     "openLinkInCurrentWin": true,
     "quickOpenInCurrentWin": true,
     "ignoreFile": true,
