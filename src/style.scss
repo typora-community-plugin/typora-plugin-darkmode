@@ -1,19 +1,31 @@
 html {
-  .footer-item .fa-sun-o {
-    display: none;
-  }
-  .footer-item .fa-moon-o {
-    display: inline;
-  }
-
   &.typ-darkmode {
     filter: invert(.9) hue-rotate(.5turn);
 
-    .footer-item .fa-sun-o {
-      display: inline;
+    img,
+    svg,
+    video {
+      filter: invert(1.1) hue-rotate(.5turn);
     }
-    .footer-item .fa-moon-o {
-      display: none;
-    }
+  }
+}
+
+/*************************************
+ * status bar button
+ */
+
+.footer-item .fa-sun-o {
+  display: none;
+
+  .typ-darkmode & {
+    display: inline;
+  }
+}
+
+.footer-item .fa-moon-o {
+  display: inline;
+
+  .typ-darkmode & {
+    display: none;
   }
 }
