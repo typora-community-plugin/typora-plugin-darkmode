@@ -4,7 +4,11 @@ html {
 
     img,
     svg,
-    video {
+    video,
+    /* compatible with viewer.js */
+    .viewer-container.viewer-backdrop,
+    .viewer-container .viewer-canvas,
+    .viewer-container .viewer-list {
       filter: invert(1.1) hue-rotate(.5turn);
     }
   }
