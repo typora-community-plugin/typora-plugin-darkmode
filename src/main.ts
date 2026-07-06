@@ -1,22 +1,12 @@
 import './style.scss'
-import { I18n, Plugin } from '@typora-community-plugin/core'
+import { I18n, Plugin, path } from '@typora-community-plugin/core'
+import * as Locale from './locales/lang.en.json'
 
 
 export default class extends Plugin {
 
-  i18n = new I18n({
-    resources: {
-      'en': {
-        toggleButton: 'Toggle Dark Mode',
-        enable: 'Enable',
-        disable: 'Disable',
-      },
-      'zh-cn': {
-        toggleButton: '切换暗黑模式',
-        enable: '启用暗黑模式',
-        disable: '禁用暗黑模式',
-      },
-    }
+  i18n = new I18n<typeof Locale>({
+    localePath: path.join(this.manifest.dir!, 'locales')
   })
 
   onload() {
